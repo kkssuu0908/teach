@@ -1,0 +1,273 @@
+/* 전체 페이지에 대한 스타일 */
+body {
+    font-family: sans-serif; /* 전체 텍스트 글꼴을 sans-serif로 설정 */
+    background-color: #FFFFCC; /* 전체 배경 색상을 연한 노란색(#FFFFCC)으로 설정 */
+}
+
+/* 이미지 삭제 버튼 스타일 */
+.remove-image {
+    width: 600px;
+    margin: 0;
+    color: #fff;
+    background: #0bcb1b;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 70;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+}
+/* 이미지 삭제 버튼 호버 스타일 */
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+/* 이미지 삭제 버튼 클릭 스타일 */
+.remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+
+/* 네비게이션 요소 간 여백 스타일 */
+.nav-distance {
+    padding: 2.1% 15%;
+}
+.div.ul.li.nav-item{
+    color:#8b00ff         /*네브바 컬러들*/
+}
+.nav-item1{
+    color:#8b00ff
+}
+.nav-item2{
+    color:#8b00ff
+}
+.nav-item3{
+    color:#8b00ff
+}
+.nav-item4{
+    color:#8b00ff
+}
+
+
+/* 콘텐츠 컨테이너 스타일 */
+.content-container {
+    display: flex;
+    justify-content: center;
+ 
+}
+
+
+/* 네비게이션 토글 버튼 스타일 */
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+
+/* 네비게이션 로고 스타일 */
+.navbar-light .navbar-brand {
+    font-family: NanumSquareR;
+    line-height: 1.68;
+    text-align: left;
+    color: #5d5135;
+}
+
+
+
+/* 섹션 상단 여백 스타일 */
+.section {
+    margin-top: 100px;
+}
+
+
+/* 미디어 쿼리 - 화면 너비가 600px 이하일 때 스타일 변경 */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+/* 파일 업로드 컨테이너 스타일 */
+.file-upload {
+    width: 600px; /* 파일 업로드 컨테이너의 너비를 600px로 설정 */
+    margin-left: 50px; /* 왼쪽 여백을 50px로 설정 */
+}
+
+
+/* 부제목 스타일 */
+.subtitle {
+    font-family: NanumsquareR;
+    font-size: 80px;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+}
+/* 제목 스타일 */
+.title {
+    font-family: NanumsquareR;
+    font-size: 44.5px;
+    line-height: 1.67;
+    font-weight: 300;
+    color: #8b00ff;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+/* 파일 업로드 버튼 스타일 */
+.file-upload-btn {
+    width: 510px;
+    height: 50px;
+    margin: 0;
+    color: #fff;
+    background: transparent; /* 배경을 투명으로 설정 */
+    border: 10px solid #f7f70e; /* 노란색 겉테두리 설정 */
+    padding: 10px;
+    border-radius: 20px; /* 겉테두리에 둥근 모서리 설정 */
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    top: 500px;
+    left: 540px;
+}
+
+/* 파일 업로드 버튼 호버 스타일 */
+.file-upload-btn:hover {
+    background: #6633CC;
+    border-color: #63c  ; /* 호버 시 겉테두리 색상 변경 */
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+    
+}
+
+/* 파일 업로드 버튼 클릭 스타일 */
+.file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+/* 파일 업로드 컨테이너 내용 스타일 */
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+/* 파일 업로드 입력 필드 스타일 */
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer; 
+}
+image
+/* 이미지 업로드 컨테이너 스타일 */
+.image-upload-wrap {
+    margin-top: 50px;
+    border: 4px dashed #6633CC;
+    position: absolute;
+    top: 100px;
+    left: 340px;
+}
+
+
+/* 이미지 업로드 컨테이너 스타일 */
+.image-upload-wrap {
+    margin-top: 50px;
+    position: relative;
+}
+
+
+/* 바깥쪽 선 스타일 */
+.image-upload-wrap::before {
+    content: ""; /* 가상 요소를 생성하여 바깥쪽 선을 스타일링 */
+    position: absolute;
+    top: -4px; /* 바깥쪽 선의 상단 위치 조정 */
+    right: -4px; /* 바깥쪽 선의 오른쪽 위치 조정 */
+    bottom: -4px; /* 바깥쪽 선의 하단 위치 조정 */
+    left: -4px; /* 바깥쪽 선의 왼쪽 위치 조정 */
+    border: 10px solid#0519f3 ; /* 바깥쪽 선의 색상과 두께 설정 */
+    border-radius: 20px; /* 바깥쪽 선에 더 큰 둥근 모서리 설정 */
+}
+/* 드래그 앤 드롭 텍스트 스타일 */
+.drag-text {
+    text-align: center;
+    color: #e41515; /* 텍스트 색상을 흰색으로 설정 */
+}
+
+/* 드래그 앤 드롭 텍스트 제목 스타일 */
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 10px 0; /* 텍스트 위아래 여백 설정 */
+}
+
+/* 파일 업로드 이미지 스타일 */
+.file-upload-image {
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    position: absolute;            /* 이게 위치바꾸는거야아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ!!*/
+    top: 650px; /* 원하는 상단 위치로 조정 */
+    left: 650px; 
+}
+.image-upload-wrap::before
+{
+    width: 510px; /* 이미지 너비 설정 */  
+    height: 250px; /* 이미지 높이 설정 */
+    position: absolute;            /* 이게 위치바꾸는거야아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ!!*/
+    top: 330px; /* 원하는 상단 위치로 조정 */
+    left: 0px; /* 원하는 왼쪽 위치로 조정 */
+}
+/* 버튼 스타일 */
+/* 버튼 스타일 */
+.but {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    position: absolute;  /*사진모양*/
+    top: 380px;
+    left: 200px;
+    
+}
+
+/* 버튼 호버 스타일 */
+button:hover {
+    background-color: #29d419;
+}
+.imag{   
+    width: 10px;
+    height: 10px;
+    position: absolute;  /*사진모양*/
+    top: 250px;
+    left: 170px;
+} 
+.karina{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 400px; /* 원하는 상단 위치로 조정 */
+    left: 990px; /* 원하는 왼쪽 위치로 조정 */
+}
+
+.produc{
+    position: absolute;
+    top:180px;
+    left:540px;
+    
+}

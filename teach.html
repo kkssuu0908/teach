@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+  <title>아이돌상 테스트</title>
+  <link rel="stylesheet" href="teach.css">
+</head>
+<body>    
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary nav-distance">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IDOL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>    
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">NEWJEANS</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link active" aria-current="page" href="#">IVE</a>
+          </li>
+          <li class="nav-item3">
+            <a class="nav-link active" aria-current="page" href="#">LESSERAFIM</a>
+          </li>
+          <li class="nav-item4">
+            <a class="nav-link active" aria-current="page" href="#">IRENE</a>
+          </li>
+          <section class="section">
+            <h1 class="title"><strong><b>당신이 가장닮은 아이돌상은?</b></strong></h1>
+          </section>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <script src="teach.js"></script>
+  <p></p>
+
+ 
+  <div class="content-container">
+    <div class="but">
+      <button style="width: 100%" type="button" onclick="init()"><strong><b>Start</b></strong></button>
+      <button style="width: 100%" type="button" onclick="predict()"><strong><b>예측</b></strong></button>
+    </div>
+ 
+    <div class="file-upload">
+      
+      <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger('click')"></button>
+      <div class="image-upload-wrap">
+        <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+        <div class="drag-text">
+       </div>   
+      </div>
+      <div class="file-upload-content">
+        <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+          <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="webcam-container"></div>
+  <div id="label-container"></div>
+  <div id="disqus_thread"></div>
+ 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="your-updated-javascript.js"></script>
+
+
+
+
+  <div class="imag">
+      <img src="image.png"width:"400px" height:"300px" >
+  </div>
+  <div class="produc">
+      <img src="produce.jpg" width="500px" height="300px">
+    </div>
+ <div class="karina">
+  <img src="karina.png">
+</div>
+  </body>
+</html>
